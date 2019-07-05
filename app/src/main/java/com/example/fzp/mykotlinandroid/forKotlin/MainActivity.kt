@@ -63,7 +63,7 @@ class MainActivity(
             val toKotlinMenu = Intent(this, MenuActivity::class.java)
             startActivity(toKotlinMenu)
         })
-        swIsUse?.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
+        swIsUse?.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { _, isChecked ->
             isUseFun = isChecked
         })
     }
